@@ -79,13 +79,16 @@ def exportInvoceFiles():
 # class name should not use CamelCase, maybe use select related or prefetch one request into db, now we have 2n+1
 # database requests
 
+
 def export_data_invoice(invoice_id):
     """Generator, który zwraca kolejne wiersze do wyświetlenia/zapisania do pliku."""
     invoice = Invoice.objects.get(id=invoice_id)
     yield invoice.entity.name
     value = 0
     for item in invoice.item_set().all():
-yield item . product . name , item . product . value , item . product . tax
-value += item . product . value * item . product . tax
+        yield item.product.name, item.product.value, item.product.tax
+        value += item.product.value * item.product.tax
 
-yield f ' \n\n Do zapłaty: {value} zł (brutto)'
+    yield f'\n\n Do zapłaty: {value} zł (brutto)'
+
+# add typing,
