@@ -92,3 +92,8 @@ def export_data_invoice(invoice_id):
     yield f'\n\n Do zapłaty: {value} zł (brutto)'
 
 # add typing,
+# function never used,
+# why yield all of these information?
+# invoice entity name -> next request into db
+# what is invoice.item_set().all(): ?
+# value sohuld be increased every time by item value += item value * tax
