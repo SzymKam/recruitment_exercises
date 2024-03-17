@@ -20,16 +20,25 @@ class Invoice(models.Model):
     # use english for description/names
 
     TAX = 23
-    def update_value ( self ):
-        self . value = 0
-        for item in self . item_set () . all ():
-            self . value += item . product . value
 
-        self . save ( update_fields = [ 'value' ])
+    # if want tax as constant, move it into separate file
+
+    def update_value(self):
+        self.value = 0
+        for item in self.item_set().all():
+            self.value += item.product.value
+
+        self.save(update_fields=['value'])
+
+    # item_set doesn't exist, cant get queryset from db. Logic like this should be in views.
+    # it's model class
 
     @property
-    def value_with_tax ( self ):
-        return self . value * self . TAX
+    def value_with_tax(self):
+        return self.value * self.TAX
+
+    # maybe just use here tax value, instead of constants value. Its used just one, and created inside class.
+    # tax value should be value += 0,23 * value
 
 
 class Product ( models . Model ):
