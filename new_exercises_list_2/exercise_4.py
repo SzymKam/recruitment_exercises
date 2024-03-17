@@ -66,22 +66,25 @@ import csv
 # from .models import *
 from django.db.models import Sum
 
-def exportInvoceFiles ():
-with open ( 'zamówienia' , 'w' ) as _f :
-stream = csv . writer ( _f )
-stream . writerow ([ 'Podmiot' , 'Ile ma zamówień' , 'Na łączną kwotę' ])
-for entity in Entities . objects . all ():
-stream . writerow ([
-entity . name , Invoice . objects . filter ( entity = entity ) . count (),
-Invoice . objects . filter ( entity = entity ) . aggregate ( sum = Sum ( 'value' ))[ 'sum' ] * Invoice . TAX
-])
+def exportInvoceFiles():
+    with open ('zamówienia', 'w') as _f:
+        stream = csv.writer(_f)
+        stream.writerow(['Podmiot', 'Ile ma zamówień', 'Na łączną kwotę'])
+        for entity in Entities.objects.all():
+            stream.writerow ([
+                entity.name , Invoice.objects.filter(entity=entity).count(),
+                Invoice.objects.filter(entity=entity).aggregate(sum=Sum('value'))['sum'] * Invoice.TAX
+            ])
 
-def export_data_invoice ( invoice_id ):
-"""Generator, który zwraca kolejne wiersze do wyświetlenia/zapisania do pliku."""
-invoice = Invoice . objects . get ( id = invoice_id )
-yield invoice . entity . name
-value = 0
-for item in invoice . item_set () . all ():
+# class name should not use CamelCase, maybe use select related or prefetch one request into db, now we have 2n+1
+# database requests
+
+def export_data_invoice(invoice_id):
+    """Generator, który zwraca kolejne wiersze do wyświetlenia/zapisania do pliku."""
+    invoice = Invoice.objects.get(id=invoice_id)
+    yield invoice.entity.name
+    value = 0
+    for item in invoice.item_set().all():
 yield item . product . name , item . product . value , item . product . tax
 value += item . product . value * item . product . tax
 
