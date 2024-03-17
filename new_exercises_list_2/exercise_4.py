@@ -6,16 +6,18 @@ class Entities(models.Model):
     name = models.TextField(verbose_name="Podmiot")
     address = models.TextField(verbose_name ="Adres", blank=True, null=True)
 
-# add Model into class name, delete description -> it gives no additional info now,
-# for name use, char field,
+    # add Model into class name, delete description -> it gives no additional info now,
+    # for name use, char field, use english for description/names
 
-class Invoice ( models . Model ):
+class Invoice(models.Model):
     '''Faktura.'''
-    name = models . CharField ( verbose_name = 'nr faktury' , unique = True )
-    created_at = models . DateTimeField ( verbose_name = 'data utworzenia' , auto_now_add = True )
-    value = models . FloatField ( verbose_name = 'kwota netto' )
-    entity = models . OneToOneField ( Entities , on_delete = models . SET_NULL , null = True , blank = True )
+    name = models.CharField(verbose_name='nr faktury', unique=True)
+    created_at = models.DateTimeField(verbose_name='data utworzenia', auto_now_add=True)
+    value = models.FloatField(verbose_name='kwota netto')
+    entity = models.OneToOneField(Entities, on_delete=models.SET_NULL, null=True, blank=True)
 
+    # add Model into class name, delete description -> it gives no additional info now,
+    # use english for description/names
 
     TAX = 23
     def update_value ( self ):
