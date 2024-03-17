@@ -41,20 +41,29 @@ class Invoice(models.Model):
     # tax value should be value += 0,23 * value
 
 
-class Product ( models . Model ):
+class Product(models.Model):
     """Produkt."""
-    name = models . TextField ( verbose_name = "Produkt" )
-    value = models . FloatField ( verbose_name = "kwota netto" )
-    tax = models . FloatField ( verbose_name = "podatek" )
+    name = models.TextField(verbose_name="Produkt")
+    value = models.FloatField(verbose_name="kwota netto")
+    tax = models.FloatField(verbose_name="podatek")
 
-class Item ( models . Model ):
+ # add Model into class name, delete description -> it gives no additional info now,
+ # use char field in name,
+
+
+class Item(models.Model):
     """Pozycje na fakturze."""
-    product = models . ForeignKey ( Product , on_delete = models . PROTECT )
-    invoice = models . ForeignKey ( Invoice , on_delete = models . CASCADE )
+    product = models.ForeignKey(Product, on_delete=models.PROTECT)
+    invoice = models.ForeignKey(Invoice, on_delete =models.CASCADE)
+
+# add Model into class name, delete description -> it gives no additional info now,
+# can add just one product as item. Maybe add field item to Invoice
+# why protect? when delete product it should be deleted from invoice?
+
 
 # exports.py
 import csv
-from .models import *
+# from .models import *
 from django.db.models import Sum
 
 def exportInvoceFiles ():
