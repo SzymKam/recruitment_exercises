@@ -1,11 +1,13 @@
 # models.py
 from django.db import models
 
-class Entities ( models . Model ):
+class Entities(models.Model):
     '''Podmiot.'''
-    name = models . TextField ( verbose_name = "Podmiot" )
-    address = models . TextField ( verbose_name = "Adres" , blank = True , null = True )
+    name = models.TextField(verbose_name="Podmiot")
+    address = models.TextField(verbose_name ="Adres", blank=True, null=True)
 
+# add Model into class name, delete description -> it gives no additional info now,
+# for name use, char field,
 
 class Invoice ( models . Model ):
     '''Faktura.'''
