@@ -11,3 +11,12 @@ Która odpowiedź jest poprawna?
  D. Problem 2 jest zarówno klasy P jak i NP.
 
 """
+A.Problem
+1
+jest
+klasy
+P, problem
+2
+jest
+klasy
+NP.
