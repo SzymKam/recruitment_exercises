@@ -1,0 +1,24 @@
+$$$ ID|TC_CRM_30050|
+1 - passed
+300   (sec)   End:
+2024-03-25 10:15:30    SCENARIO: Scenario 1
+
+$$$ ID|TC_CRM_30051|
+1 - passed
+299   (sec)   End:
+2024-03-25 10:20:45    SCENARIO: Scenario 2
+
+$$$ ID|TC_CRM_30052|
+1 - passed
+298   (sec)   End:
+2024-03-25 10:25:20    SCENARIO: Scenario 3
+
+$$$ ID|TC_CRM_30053|
+1 - failed
+301   (sec)   End:
+2024-03-25 10:30:10    SCENARIO: Scenario 4
+
+$$$ ID|TC_CRM_30054|
+1 - passed
+297   (sec)   End:
+2024-03-25 10:35:55    SCENARIO: Scenario 5
