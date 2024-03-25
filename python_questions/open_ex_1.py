@@ -55,9 +55,11 @@ def work_with_logs(logs):
         print(f"Number of failed tests: {passed_tests}")
         print(f"Success rate: {success_rate}%")
 
+        sorted_test_cases = sorted(test_cases.items(), key=lambda x: x[1]["duration"], reverse=True)[:3]
 
-
-
+        print(f"3 TestCasesID with longest duration time:")
+        for test in sorted_test_cases:
+            print(f"* {test[0]}")
 
 
 if __name__ == "__main__":
