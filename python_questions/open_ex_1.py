@@ -40,13 +40,20 @@ def work_with_logs(logs):
                 test_cases[case_id] = {"status": "", "duration": 0}
 
             elif ('failed' in line or 'passed' in line or 'skipped' in line) and ' - ' in line:
-                case_result = line.split('- ')[1]
+                case_result = line.split('- ')[1].strip()
                 test_cases[case_id]["status"] = case_result
 
             elif '  (sec)   End:' in line:
                 duration = line.split(' ')[0]
                 test_cases[case_id]["duration"] = int(duration)
 
+        passed_tests = len([test for test in test_cases.values() if test["status"] == "passed"])
+        failed_tests = len([test for test in test_cases.values() if test["status"] == "failed"])
+        success_rate = (passed_tests / (passed_tests + failed_tests)) * 100
+
+        print(f"Number of failed tests: {failed_tests}")
+        print(f"Number of failed tests: {passed_tests}")
+        print(f"Success rate: {success_rate}%")
 
 
 
