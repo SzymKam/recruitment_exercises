@@ -34,6 +34,7 @@ def work_with_logs(logs):
         lines = file.readlines()
 
         for line in lines:
+
             if line.startswith('$$$ ID|'):
                 case_id = line.split('|')[1]
                 test_cases[case_id] = {"status": "", "duration": 0}
@@ -42,12 +43,12 @@ def work_with_logs(logs):
                 case_result = line.split('- ')[1]
                 test_cases[case_id]["status"] = case_result
 
-            elif
+            elif '  (sec)   End:' in line:
+                duration = line.split(' ')[0]
+                test_cases[case_id]["duration"] = int(duration)
 
 
 
-
-    print(test_cases)
 
 
 
