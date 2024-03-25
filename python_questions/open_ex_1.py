@@ -59,7 +59,7 @@ def work_with_logs(logs):
 
         print(f"3 TestCasesID with longest duration time:")
         for test in sorted_test_cases:
-            print(f"* {test[0]}")
+            print(f"* {test[0]} - {test[1]['duration']} (s)")
 
 
 if __name__ == "__main__":
