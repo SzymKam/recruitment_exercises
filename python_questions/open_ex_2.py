@@ -79,6 +79,23 @@ Podsumowując, proces jest instancją działającej aplikacji, podczas gdy wąte
         Może być używany z różnymi narzędziami do testowania, w tym z pytest, Behave, Selenium i innymi.
 
 
+Locust to narzędzie do testowania wydajności aplikacji internetowych, które umożliwia symulowanie dużego obciążenia na serwerze poprzez generowanie wielu równoległych użytkowników (wątków). Oto kilka kluczowych cech i funkcji narzędzia Locust:
+
+    Python-based: Locust jest napisany w języku Python, co czyni go łatwym w użyciu dla osób znajomych z tym językiem programowania.
+
+    Skalowalność: Narzędzie jest zaprojektowane w taki sposób, aby obsługiwać duże obciążenia, pozwalając na łatwe skalowanie liczby równoległych użytkowników.
+
+    Declarative approach: Locust korzysta z deklaratywnego podejścia do definiowania testów wydajnościowych. Użytkownik definiuje zestaw zadań, które mają zostać wykonane przez symulowanych użytkowników, wraz z logiką, która ma być wykonywana w tych zadaniach.
+
+    Obsługa protokołu HTTP: Locust umożliwia testowanie aplikacji internetowych poprzez protokół HTTP, co czyni go idealnym narzędziem do testowania wydajności API oraz aplikacji webowych.
+
+    Dynamiczna konfiguracja: Użytkownicy mogą dynamicznie konfigurować testy, modyfikując scenariusze testowe, obciążenie lub inne parametry w trakcie działania testu.
+
+    Interaktywny interfejs użytkownika: Locust oferuje interaktywny interfejs webowy, który umożliwia monitorowanie postępu testów, analizę wyników oraz śledzenie metryk wydajnościowych w czasie rzeczywistym.
+
+    Raporty i wyniki: Po zakończeniu testu Locust generuje raporty zawierające szczegółowe informacje na temat wyników testów, takie jak średni czas odpowiedzi, liczba żądań na sekundę, czas odpowiedzi procentylny itp.
+
+Dzięki tym funkcjom Locust jest używany przez zespoły deweloperskie i QA do przeprowadzania testów obciążeniowych i testów wydajnościowych, pomagając w identyfikacji i eliminacji ewentualnych wąskich gardeł w aplikacjach internetowych przed wdrożeniem na produkcję.
 
 
 """
