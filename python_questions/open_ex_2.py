@@ -96,6 +96,4 @@ Locust to narzędzie do testowania wydajności aplikacji internetowych, które u
     Raporty i wyniki: Po zakończeniu testu Locust generuje raporty zawierające szczegółowe informacje na temat wyników testów, takie jak średni czas odpowiedzi, liczba żądań na sekundę, czas odpowiedzi procentylny itp.
 
 Dzięki tym funkcjom Locust jest używany przez zespoły deweloperskie i QA do przeprowadzania testów obciążeniowych i testów wydajnościowych, pomagając w identyfikacji i eliminacji ewentualnych wąskich gardeł w aplikacjach internetowych przed wdrożeniem na produkcję.
-
-
 """
