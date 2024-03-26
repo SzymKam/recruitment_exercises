@@ -39,7 +39,22 @@ to 15 podstawowych poleceń systemu Linux, które mogą być przydatne dla progr
 
 Pamiętaj, że możesz zawsze użyć polecenia man aby uzyskać więcej informacji na temat każdego z tych poleceń. Na przykład, man ls dostarczy Ci szczegółowe informacje na temat polecenia ls.
 
-proces -
+proces i watek - W kontekście programowania, "proces" i "wątek" są dwoma ważnymi koncepcjami, szczególnie w systemach operacyjnych. Oto krótkie wyjaśnienie obu terminów:
+
+    Proces:
+        Proces jest instancją działającej aplikacji w systemie operacyjnym. Może to być program uruchomiony przez użytkownika, który wykonuje określone zadania.
+        Proces ma swoją przestrzeń adresową, w której przechowywane są instrukcje programu, dane, stos i inne struktury potrzebne do jego działania.
+        Każdy proces działa niezależnie od innych procesów, co oznacza, że ​​nie ma dostępu do pamięci ani zasobów innych procesów bez odpowiednich mechanizmów synchronizacji.
+        Procesy mogą komunikować się ze sobą za pomocą mechanizmów takich jak potoki, gniazda sieciowe, pliki lub pamięć współdzielona.
+
+    Wątek:
+        Wątek jest mniejszą jednostką wykonawczą niż proces. W jednym procesie może być wiele wątków.
+        Wątki w ramach jednego procesu mają wspólną przestrzeń adresową i zasoby, co oznacza, że ​​mogą bezpośrednio współdzielić dane i zasoby między sobą.
+        Wątki w ramach jednego procesu wykonują się równolegle, co może zwiększyć wydajność aplikacji poprzez wykorzystanie wielordzeniowych procesorów.
+        Wątki mogą komunikować się między sobą za pomocą mechanizmów synchronizacji takich jak semafory, mutexy, zmienne warunkowe, itp.
+
+Podsumowując, proces jest instancją działającej aplikacji, podczas gdy wątek jest mniejszą jednostką wykonawczą w ramach procesu, która może wykonywać zadania równolegle z innymi wątkami w tym samym procesie.
+
 
 
 
