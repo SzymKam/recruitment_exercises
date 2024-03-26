@@ -58,5 +58,27 @@ Podsumowując, proces jest instancją działającej aplikacji, podczas gdy wąte
 
 
 
+    Behave:
+        Behave to biblioteka do testowania oparta na języku Python, która wykorzystuje podejście BDD (Behavior-Driven Development).
+        Umożliwia tworzenie testów w formie naturalnej, czytelnej dla wszystkich zainteresowanych stron (biznes, deweloperzy, testerzy).
+        Testy Behave są definiowane w formie scenariuszy, z krokami opartymi na języku Gherkin, który jest czytelny dla osób niebędących programistami.
+
+    Selenium:
+        Selenium to zestaw narzędzi do automatyzacji testów dla aplikacji webowych.
+        Pozwala na interakcję z przeglądarką internetową w sposób programatyczny, symulując zachowanie użytkownika.
+        Jest obsługiwane w wielu językach programowania, ale najczęściej używane jest w połączeniu z językiem Python.
+
+    Pytest:
+        Pytest to framework do testowania w języku Python, który oferuje prostą składnię i bogatą funkcjonalność.
+        Umożliwia łatwe pisanie testów, zarządzanie nimi i generowanie raportów.
+        Pytest automatycznie znajduje i wykonuje testy w oparciu o zdefiniowane kryteria.
+
+    Allure:
+        Allure to otwarty framework do generowania raportów z testów.
+        Zapewnia przejrzyste, interaktywne i estetyczne raporty z wynikami testów.
+        Może być używany z różnymi narzędziami do testowania, w tym z pytest, Behave, Selenium i innymi.
+
+
+
 
 """
