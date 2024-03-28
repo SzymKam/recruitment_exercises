@@ -5,6 +5,7 @@ move_zeros([1, 0, 1, 2, 0, 1, 3]) # returns [1, 1, 2, 1, 3, 0, 0]
 
 """
 
+
 def move_zeros(lst):
     # return [i for i in lst if i != 0] + [0] * str(lst).count('0')
     lst.sort(key=lambda v: v == 0)
@@ -17,7 +18,6 @@ def move_zeros(lst):
     #         lst.append(element)
     #
     # return lst
-
 
 
 assert move_zeros([1, 2, 0, 1, 0, 1, 0, 3, 0, 1]) == [1, 2, 1, 1, 3, 1, 0, 0, 0, 0]
