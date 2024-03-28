@@ -17,7 +17,6 @@ def digitize(n):
     return [int(num) for num in str(n)[::-1]]
 
 
-
 assert digitize(35231) == [1, 3, 2, 5, 3]
 assert digitize(0) == [0]
 assert digitize(23582357) == [7,5,3,2,8,5,3,2]
