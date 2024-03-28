@@ -12,17 +12,17 @@ Output:
 """
 
 
-
-
 def add_bolt(func):
     def inner(*args, **kwargs):
         return f"<b>{func(*args, **kwargs)}</b>"
     return inner
 
+
 def add_italic(func):
     def inner(*args, **kwargs):
         return f"<i>{func(*args, **kwargs)}</i>"
     return inner
+
 
 def add_underline(func):
     def inner(*args, **kwargs):
