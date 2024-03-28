@@ -1,7 +1,3 @@
-"""
-
-...
-"""
 
 def abbrev_name(name):
     first_name, last_name = name.split()
@@ -9,7 +5,6 @@ def abbrev_name(name):
     return f"{first_name[0].upper()}.{last_name[0].upper()}"
 
 # print(abbrev_name("Sam Harris"))
-
 
 
 assert abbrev_name("Sam Harris") == "S.H"
