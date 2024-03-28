@@ -11,9 +11,9 @@ Return `True` if you're better, else `False`!
 Your points are not included in the array of your class's points. For calculating the average point you may add your point to the given array!
 """
 
+
 def better_than_average(class_points, your_points):
     return your_points > sum(class_points) / len(class_points)
-
 
 
 assert better_than_average([2, 3], 5)
