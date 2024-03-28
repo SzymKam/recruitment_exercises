@@ -3,6 +3,7 @@ def zewnetrzna_funkcja(x):
         return x + y
     return wewnetrzna_funkcja
 
+
 closure = zewnetrzna_funkcja(10)
 wynik = closure(5)
 
