@@ -6,4 +6,9 @@ dane przesyłane przez inne urządzenia do niego podłączone. Powoduje to duże
 oraz ryzyko kolizji.
 
 Switch - urządzenie warstwy 2 modelu OSI - urządzenie dołączania na poziomie łącza danych.
+Działa na zasadzie tablicy adresów MAC - przypisuje adresy urządzeń podłązconych do
+odpowiednich portów. Przesyła dane tylko do odpowiedniego urządzenia, będącego docelowym.
+Mniejszy ruch w sieci. Wydajność.
+
+Router -
 """
