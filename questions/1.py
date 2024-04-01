@@ -18,7 +18,7 @@ działają protokoły IP.
 przepływu danych między urządzeniami końcowymi. Gwarantuje, że dane zostaną dostarczone w całości
 i w odpowiedniej kolejności. Działąją protokoły TCP.
 
-WARSTWY WYŻSZE -
+WARSTWY WYŻSZE - współpraca z oprogramowaniem. Pozwalają na komunijację z warstwami niższymi
 
 5. Warstwa sesji - zarządza komunikacją między aplikacjami na różnych urządzeniach (synchronizacja).
 Odpowiada za rozpoczęcie, utrzymanie oraz zakończenie sesji między urządzeniami. Ma mechanizmy
@@ -27,4 +27,6 @@ odzyskiwania sesji.
 żeby warstwy niższe zawsze otrzymywały dane w tym samym formacie. W drugą stronę tłumaczy dane
 przychodzące na zgodne z wewnętrzną reprezentacją systemu docelowego (różne systemy róznie
 interpertują dane).
+7. Warstwa aplikacji - dostarcza interfejsy dla aplikacji. Odpowiada za komunikację między
+aplikacjami i obsługuje konktretne protokoły i usługi: HTTP, SMTP, FTP.
 """
