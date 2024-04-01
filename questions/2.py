@@ -10,5 +10,7 @@ Działa na zasadzie tablicy adresów MAC - przypisuje adresy urządzeń podłąz
 odpowiednich portów. Przesyła dane tylko do odpowiedniego urządzenia, będącego docelowym.
 Mniejszy ruch w sieci. Wydajność.
 
-Router -
+Router - urządzenie 3 warstwy modelu OSI - urządzenie warstwy sieciowej. Działa na podstawie
+adresów IP, może przesyłać dane między sieciami. Podejmuje decyzje o wyborze najlepszej ścieżki
+dla pakietów danych. Przekazuje dane miedzy np. LAN, Internet.
 """
