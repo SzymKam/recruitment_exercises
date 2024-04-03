@@ -5,10 +5,11 @@ oba z nich służą do diagnostyki i analizy połączeń sieciowych. Służą do
 z innymi hostami w sieci oraz określania trasy jaką przebywa pakiet.
 
 Podobieństwa - testowanie połączena z hostem, diagnozowanie problemów z połączeniem,
-wykorzystanie protokołu ICMP (Internet Control Message Protocol)
+wysyłanie pakietów, sprawdzanie dostępności, pomiar czasu
 
 Traceroute - może zbierać odpowiedzi od hosstów pośredniczących (routers) na trasie pakietu -
 co pozwala na śledzenie trasy którą przechodzi pakiet.
+
 Ping - prostsze narzedzie, służy głóœwnie do sprawdzania dostępności hosta i
  pomiaru czasu odpowiedzi
 """
