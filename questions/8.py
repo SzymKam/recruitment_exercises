@@ -5,7 +5,7 @@ oba z nich służą do diagnostyki i analizy połączeń sieciowych. Służą do
 z innymi hostami w sieci oraz określania trasy jaką przebywa pakiet.
 
 Podobieństwa - testowanie połączena z hostem, diagnozowanie problemów z połączeniem,
-wykorzystanie protokołu ICMP
+wykorzystanie protokołu ICMP (Internet Control Message Protocol)
 
 Traceroute - może zbierać odpowiedzi od hosstów pośredniczących (routers) na trasie pakietu -
 co pozwala na śledzenie trasy którą przechodzi pakiet.
