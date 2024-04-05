@@ -8,5 +8,4 @@ Głównym celem jest DHCP jest ułatwienie i automatyzacja procesu konfiguracji 
 i innych ustawień dla urządzeń podłączonych do sieci. Adresy IP mogą być przydzielane na dany czas, co oznacza
 potrzebę ich odnowienia po zadanym czasie - dzięki temu lepsze zarządzanie pulą adresów. Umożliwia centralne
 zarządzanie konfiguracją sieci, bo wszystkie parametry sieciową są przyznawane i kontrolowane przez DHCP.
-
 """
