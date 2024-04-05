@@ -24,5 +24,4 @@ la /sys/class/net - lista interfejsów sieciowych, u mnie to:
  - enp7s0 - interfejs ethernet
  - lo  - interfejs pętli zwrotnej, używany do komunikacji wewnatrz systemu
  - wlp8s0 - interfejs bezprzewodowy WiFi
-
 """
