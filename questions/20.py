@@ -1,0 +1,1 @@
+"""co to service w kubernetesie"""
