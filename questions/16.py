@@ -19,4 +19,5 @@ UDP - nie daje takiej gwarancji, ale szybsze
 
 TCP gdy ważna jest niezawodność, np. przesył plików, stron.
 UDP - gdy potrzeba szybkości np. gry online, transmije strumieniowe
+
 """
