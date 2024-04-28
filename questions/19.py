@@ -9,4 +9,5 @@ hosta w IP.
 
 Np dla IP 192.168.1.10 stosując maskę podsieci 255.255.255.0 - pierwsze 4 bity czyli pierwsze 3 oktety, reprezentują
 identyfikator sieci, a ostatni identyfikator hosta. Wówczas IP 192.168.1.0 to adres sieci, a 10 to adres hosta w sieci.
+
 """
