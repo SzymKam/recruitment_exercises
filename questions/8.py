@@ -12,4 +12,5 @@ co pozwala na śledzenie trasy którą przechodzi pakiet.
 
 Ping - prostsze narzedzie, służy głóœwnie do sprawdzania dostępności hosta i
  pomiaru czasu odpowiedzi
+
 """
