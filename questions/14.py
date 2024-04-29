@@ -9,5 +9,4 @@ segmentach sieci. VLAN umożliwia segmentację sieci na logiczne grupy.
  można ograniczyć ruch tylko do urządzeń VLAN.
  - izolacja ruchu
  - komunikacja tak jakby były połączone ze sobą fizycznie
-
 """
