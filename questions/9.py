@@ -9,5 +9,4 @@ i wysyła informację zwrotną o przekroczonym czasie - pozwala go to zlokazlizo
 Zaczynamy od TLL = 1 i zwiększamy go o 1 przy każdym etapie. Generowana jest listra routerów i czas ich odpowiedzi
 (ping). Na docelowym hoście zwrócone zostanie prawdopodobnie PORT UNREACHABLE - ponieważ pakiet wysłany jest z
 numerem portu powyżej 30000.
-
 """
